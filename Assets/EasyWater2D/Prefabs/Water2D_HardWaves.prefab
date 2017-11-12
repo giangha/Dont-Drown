@@ -1,0 +1,217 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1485212258688630}
+  m_IsPrefabParent: 1
+--- !u!1 &1485212258688630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4878608013458774}
+  - component: {fileID: 23237221724035618}
+  - component: {fileID: 33542042788997258}
+  - component: {fileID: 114358359498156924}
+  m_Layer: 0
+  m_Name: Water2D_HardWaves
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4878608013458774
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485212258688630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -3.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23237221724035618
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485212258688630}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 4c4b0ebf5070b9a42a11cbb8fee9d38d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33542042788997258
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485212258688630}
+  m_Mesh: {fileID: 0}
+--- !u!114 &114358359498156924
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1485212258688630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d308ec24a253f046918f7dc6165e27b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawDebugShapes: 1
+  size: {x: 18, y: 3}
+  segments: 6
+  softness: 6
+  speedMultiplier: 1.4
+  accelerationMultiplier: 4.2
+  waveHeight: 0.46
+  randomness: 0.415
+  vertexCount: 7
+  softVertexCount: 43
+  softFacesPerSegment: 7
+  softSegments: 42
+  lowerLimit: -1
+  upperLimit: 1
+  vertices:
+  - {x: -9, y: 1.5, z: 0}
+  - {x: -9, y: -1.5, z: 0}
+  - {x: -8.571428, y: 1.5, z: 0}
+  - {x: -8.571428, y: -1.5, z: 0}
+  - {x: -8.142857, y: 1.5, z: 0}
+  - {x: -8.142857, y: -1.5, z: 0}
+  - {x: -7.7142854, y: 1.5, z: 0}
+  - {x: -7.7142854, y: -1.5, z: 0}
+  - {x: -7.285714, y: 1.5, z: 0}
+  - {x: -7.285714, y: -1.5, z: 0}
+  - {x: -6.857143, y: 1.5, z: 0}
+  - {x: -6.857143, y: -1.5, z: 0}
+  - {x: -6.4285717, y: 1.5, z: 0}
+  - {x: -6.4285717, y: -1.5, z: 0}
+  - {x: -6.0000005, y: 1.5, z: 0}
+  - {x: -6.0000005, y: -1.5, z: 0}
+  - {x: -5.5714293, y: 1.5, z: 0}
+  - {x: -5.5714293, y: -1.5, z: 0}
+  - {x: -5.142858, y: 1.5, z: 0}
+  - {x: -5.142858, y: -1.5, z: 0}
+  - {x: -4.714287, y: 1.5, z: 0}
+  - {x: -4.714287, y: -1.5, z: 0}
+  - {x: -4.2857156, y: 1.5, z: 0}
+  - {x: -4.2857156, y: -1.5, z: 0}
+  - {x: -3.857144, y: 1.5, z: 0}
+  - {x: -3.857144, y: -1.5, z: 0}
+  - {x: -3.4285727, y: 1.5, z: 0}
+  - {x: -3.4285727, y: -1.5, z: 0}
+  - {x: -3.0000012, y: 1.5, z: 0}
+  - {x: -3.0000012, y: -1.5, z: 0}
+  - {x: -2.5714297, y: 1.5, z: 0}
+  - {x: -2.5714297, y: -1.5, z: 0}
+  - {x: -2.1428583, y: 1.5, z: 0}
+  - {x: -2.1428583, y: -1.5, z: 0}
+  - {x: -1.7142868, y: 1.5, z: 0}
+  - {x: -1.7142868, y: -1.5, z: 0}
+  - {x: -1.2857153, y: 1.5, z: 0}
+  - {x: -1.2857153, y: -1.5, z: 0}
+  - {x: -0.8571439, y: 1.5, z: 0}
+  - {x: -0.8571439, y: -1.5, z: 0}
+  - {x: -0.42857245, y: 1.5, z: 0}
+  - {x: -0.42857245, y: -1.5, z: 0}
+  - {x: -0.000001013279, y: 1.5, z: 0}
+  - {x: -0.000001013279, y: -1.5, z: 0}
+  - {x: 0.42857042, y: 1.5, z: 0}
+  - {x: 0.42857042, y: -1.5, z: 0}
+  - {x: 0.85714185, y: 1.5, z: 0}
+  - {x: 0.85714185, y: -1.5, z: 0}
+  - {x: 1.2857133, y: 1.5, z: 0}
+  - {x: 1.2857133, y: -1.5, z: 0}
+  - {x: 1.7142848, y: 1.5, z: 0}
+  - {x: 1.7142848, y: -1.5, z: 0}
+  - {x: 2.1428561, y: 1.5, z: 0}
+  - {x: 2.1428561, y: -1.5, z: 0}
+  - {x: 2.5714276, y: 1.5, z: 0}
+  - {x: 2.5714276, y: -1.5, z: 0}
+  - {x: 2.999999, y: 1.5, z: 0}
+  - {x: 2.999999, y: -1.5, z: 0}
+  - {x: 3.4285705, y: 1.5, z: 0}
+  - {x: 3.4285705, y: -1.5, z: 0}
+  - {x: 3.857142, y: 1.5, z: 0}
+  - {x: 3.857142, y: -1.5, z: 0}
+  - {x: 4.285713, y: 1.5, z: 0}
+  - {x: 4.285713, y: -1.5, z: 0}
+  - {x: 4.7142844, y: 1.5, z: 0}
+  - {x: 4.7142844, y: -1.5, z: 0}
+  - {x: 5.1428556, y: 1.5, z: 0}
+  - {x: 5.1428556, y: -1.5, z: 0}
+  - {x: 5.571427, y: 1.5, z: 0}
+  - {x: 5.571427, y: -1.5, z: 0}
+  - {x: 5.999998, y: 1.5, z: 0}
+  - {x: 5.999998, y: -1.5, z: 0}
+  - {x: 6.4285693, y: 1.5, z: 0}
+  - {x: 6.4285693, y: -1.5, z: 0}
+  - {x: 6.8571405, y: 1.5, z: 0}
+  - {x: 6.8571405, y: -1.5, z: 0}
+  - {x: 7.285712, y: 1.5, z: 0}
+  - {x: 7.285712, y: -1.5, z: 0}
+  - {x: 7.714283, y: 1.5, z: 0}
+  - {x: 7.714283, y: -1.5, z: 0}
+  - {x: 8.142855, y: 1.5, z: 0}
+  - {x: 8.142855, y: -1.5, z: 0}
+  - {x: 8.571426, y: 1.5, z: 0}
+  - {x: 8.571426, y: -1.5, z: 0}
+  - {x: 8.999998, y: 1.5, z: 0}
+  - {x: 8.999998, y: -1.5, z: 0}
+  vertexTransforms:
+  - position: 1.5
+    velocity: 0.678602
+    acceleration: -1.3282018
+  - position: 1.5
+    velocity: -0.81154394
+    acceleration: 1.0465076
+  - position: 1.5
+    velocity: -0.4493541
+    acceleration: 0.68377435
+  - position: 1.5
+    velocity: -0.8388418
+    acceleration: 0.85588074
+  - position: 1.5
+    velocity: -0.667189
+    acceleration: 1.2281497
+  - position: 1.5
+    velocity: -0.49820948
+    acceleration: -1.1777133
+  - position: 1.5
+    velocity: -0.42586842
+    acceleration: 1.3820419

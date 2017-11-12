@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1356050672268906}
+  m_IsPrefabParent: 1
+--- !u!1 &1356050672268906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4108024507146130}
+  - component: {fileID: 23764651859099962}
+  - component: {fileID: 33103586870944292}
+  - component: {fileID: 114736979567888462}
+  m_Layer: 0
+  m_Name: Water2D_Edged
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4108024507146130
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356050672268906}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -3.71, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!23 &23764651859099962
+MeshRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356050672268906}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 4c4b0ebf5070b9a42a11cbb8fee9d38d, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &33103586870944292
+MeshFilter:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356050672268906}
+  m_Mesh: {fileID: 0}
+--- !u!114 &114736979567888462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1356050672268906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d308ec24a253f046918f7dc6165e27b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  drawDebugShapes: 1
+  size: {x: 18, y: 3}
+  segments: 14
+  softness: 0
+  speedMultiplier: 1.1
+  accelerationMultiplier: 2.9
+  waveHeight: 0.35
+  randomness: 0.716
+  vertexCount: 15
+  softVertexCount: 15
+  softFacesPerSegment: 1
+  softSegments: 14
+  lowerLimit: -1
+  upperLimit: 1
+  vertices:
+  - {x: -9, y: 1.5, z: 0}
+  - {x: -9, y: -1.5, z: 0}
+  - {x: -7.714286, y: 1.5, z: 0}
+  - {x: -7.714286, y: -1.5, z: 0}
+  - {x: -6.4285717, y: 1.5, z: 0}
+  - {x: -6.4285717, y: -1.5, z: 0}
+  - {x: -5.1428576, y: 1.5, z: 0}
+  - {x: -5.1428576, y: -1.5, z: 0}
+  - {x: -3.8571434, y: 1.5, z: 0}
+  - {x: -3.8571434, y: -1.5, z: 0}
+  - {x: -2.5714293, y: 1.5, z: 0}
+  - {x: -2.5714293, y: -1.5, z: 0}
+  - {x: -1.285715, y: 1.5, z: 0}
+  - {x: -1.285715, y: -1.5, z: 0}
+  - {x: -0.00000071525574, y: 1.5, z: 0}
+  - {x: -0.00000071525574, y: -1.5, z: 0}
+  - {x: 1.2857136, y: 1.5, z: 0}
+  - {x: 1.2857136, y: -1.5, z: 0}
+  - {x: 2.5714278, y: 1.5, z: 0}
+  - {x: 2.5714278, y: -1.5, z: 0}
+  - {x: 3.857142, y: 1.5, z: 0}
+  - {x: 3.857142, y: -1.5, z: 0}
+  - {x: 5.142856, y: 1.5, z: 0}
+  - {x: 5.142856, y: -1.5, z: 0}
+  - {x: 6.4285703, y: 1.5, z: 0}
+  - {x: 6.4285703, y: -1.5, z: 0}
+  - {x: 7.7142844, y: 1.5, z: 0}
+  - {x: 7.7142844, y: -1.5, z: 0}
+  - {x: 8.999999, y: 1.5, z: 0}
+  - {x: 8.999999, y: -1.5, z: 0}
+  vertexTransforms:
+  - position: 1.5
+    velocity: 0.48881212
+    acceleration: 0.64564353
+  - position: 1.5
+    velocity: -0.20766567
+    acceleration: -1.2340564
+  - position: 1.5
+    velocity: -0.21338558
+    acceleration: 0.9175546
+  - position: 1.5
+    velocity: -0.9912505
+    acceleration: 0.5902027
+  - position: 1.5
+    velocity: -0.5452956
+    acceleration: -0.98065585
+  - position: 1.5
+    velocity: -0.47458223
+    acceleration: -0.33837378
+  - position: 1.5
+    velocity: 0.2117231
+    acceleration: -1.150576
+  - position: 1.5
+    velocity: -0.25187227
+    acceleration: 1.1336433
+  - position: 1.5
+    velocity: -0.43827805
+    acceleration: -1.5013083
+  - position: 1.5
+    velocity: -0.41658655
+    acceleration: -0.48134428
+  - position: 1.5
+    velocity: 0.38706473
+    acceleration: 1.066071
+  - position: 1.5
+    velocity: -0.98988724
+    acceleration: 0.80651945
+  - position: 1.5
+    velocity: -0.28925315
+    acceleration: -0.6572714
+  - position: 1.5
+    velocity: -0.23492332
+    acceleration: -0.8229209
+  - position: 1.5
+    velocity: 0.78454566
+    acceleration: 0.8699889

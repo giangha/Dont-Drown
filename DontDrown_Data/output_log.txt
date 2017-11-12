@@ -1,0 +1,78 @@
+Initialize engine version: 2017.1.0f3 (472613c02cf7)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 520 (ID=0x1916)
+    Vendor:   Intel
+    VRAM:     2111 MB
+    Driver:   21.20.16.4627
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\UnityEngine.Timeline.dll (this message is harmless)
+Loading C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\System.dll (this message is harmless)
+Platform assembly: C:\Users\kamil\Downloads\Don-t-Be-Drown\DontDrown_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.051 seconds
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 9.923688 ms
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 1794 -> priority: 1 
+  Thread -> id: 14e8 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.545022 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 339.
+Total: 0.553025 ms (FindLiveObjects: 0.030358 ms CreateObjectMapping: 0.025435 ms MarkObjects: 0.213743 ms  DeleteObjects: 0.282666 ms)
+
+Player
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Player
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+ArgumentOutOfRangeException: Argument is out of range.
+Parameter name: index
+  at System.Collections.Generic.List`1[UnityEngine.GameObject].get_Item (Int32 index) [0x00000] in <filename unknown>:0 
+  at GameController.Update () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+

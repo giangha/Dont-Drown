@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Boundary
+  - Crate
+  - Boat
+  - windarea
+  - Net
+  - net_tag
+  - Alligator
+  - playerHealthSlider
+  - water
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Alligator
+  - Boat
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: BackGround
+    uniqueID: 535654817
+    locked: 0
+  - name: MidGround
+    uniqueID: 3900064877
+    locked: 0
+  - name: FrontGround
+    uniqueID: 4148366259
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: crate
+    uniqueID: 2393598611
+    locked: 0
+  - name: boat
+    uniqueID: 244941969
+    locked: 0
+  - name: Alligator
+    uniqueID: 4065365397
+    locked: 0

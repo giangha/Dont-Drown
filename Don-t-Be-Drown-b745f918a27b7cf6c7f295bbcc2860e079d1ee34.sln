@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Don-t-Be-Drown-b745f918a27b7cf6c7f295bbcc2860e079d1ee34", "Don-t-Be-Drown-b745f918a27b7cf6c7f295bbcc2860e079d1ee34.csproj", "{7E555A3B-77DD-0806-896E-071E5F2B4B69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Don-t-Be-Drown-b745f918a27b7cf6c7f295bbcc2860e079d1ee34.Editor", "Don-t-Be-Drown-b745f918a27b7cf6c7f295bbcc2860e079d1ee34.Editor.csproj", "{F52CF6ED-CC79-ED14-C5C7-0C786C988EFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7E555A3B-77DD-0806-896E-071E5F2B4B69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E555A3B-77DD-0806-896E-071E5F2B4B69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E555A3B-77DD-0806-896E-071E5F2B4B69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E555A3B-77DD-0806-896E-071E5F2B4B69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F52CF6ED-CC79-ED14-C5C7-0C786C988EFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F52CF6ED-CC79-ED14-C5C7-0C786C988EFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F52CF6ED-CC79-ED14-C5C7-0C786C988EFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F52CF6ED-CC79-ED14-C5C7-0C786C988EFD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
