@@ -95,7 +95,7 @@ public class GameController : MonoBehaviour
     public void Alligator_Damage()
     {
              
-        boat_health = boat_health - 5;
+        boat_health = boat_health - 1;
         if(boat_health<=0)
         {
             SceneManager.LoadScene(3);
@@ -138,7 +138,7 @@ public class GameController : MonoBehaviour
                 }
                 //hintText.text = "Thank you very muchhhhhhhhhhhhh";
                
-                netUpdate();
+              //  netUpdate();
             }
             else
             {
@@ -147,13 +147,16 @@ public class GameController : MonoBehaviour
             return;
         }
 		
-        if (Input.GetKeyUp("up"))
+        if (Input.GetKeyDown("up"))
         {
+
+
+            if (nets > 0)
             
-            
-                if(nets>0)
                 nets--;
+
                 netUpdate();
+            
                 return;
             
         }
