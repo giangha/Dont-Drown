@@ -50,12 +50,13 @@ public class alligator_move : MonoBehaviour
 
          float difference_between_locations = old_x_location - new_x_location;
          if (difference_between_locations < 0) difference_between_locations = difference_between_locations * -1;
-         if (difference_between_locations < 2.7)
+         if (difference_between_locations < 2.7 && !caught)
          {
             //  Invoke("Alligator_Attack", 0);
             gameController.Alligator_Damage();
-          //  Invoke("Reappear", 15);
-           // aligator.gameObject.SetActive(false);
+           
+            aligator.gameObject.SetActive(false);
+            Invoke("Reappear", 15);
 
         }
 
@@ -72,7 +73,7 @@ public class alligator_move : MonoBehaviour
             other.gameObject.SetActive(false);
             caught = true;
             speed = .1f;
-            Invoke("unCaught", 15);
+            Invoke("unCaught", 10);
           //  Invoke("Reappear", 15);
         }
       //  if (other.gameObject.CompareTag("Boat")) {
@@ -89,8 +90,10 @@ public class alligator_move : MonoBehaviour
 
     void unCaught()
     {
+        CancelInvoke();
         caught = false;
         speed = 1f;
+       // target.position = new Vector3(12, -4.8f, 0);
     }
 
    /* void pushBack()

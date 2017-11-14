@@ -39,13 +39,13 @@ public class GameController : MonoBehaviour
     // Total crates on boat
     GameObject[] totalCrates;
 
-    public int boat_health = 100;
+    public int boat_health = 5;
     public Slider playerHealthSlider;
 
 
     void Start()
     {
-        
+        startingTime = 90;
         score = 0;
         StartCoroutine(SpawnWave());
         net_drop = false;
@@ -95,7 +95,7 @@ public class GameController : MonoBehaviour
     public void Alligator_Damage()
     {
              
-        boat_health = boat_health - 1;
+        boat_health = boat_health - 50;
         if(boat_health<=0)
         {
             SceneManager.LoadScene(3);
@@ -153,7 +153,7 @@ public class GameController : MonoBehaviour
 
             if (nets > 0)
             
-                nets--;
+              //  nets--;
 
                 netUpdate();
             
@@ -163,10 +163,10 @@ public class GameController : MonoBehaviour
 		
         if (startingTime <= 0)
         {
-            if (score >= 50)
+            if (score >= 100)
             {
                 hintText.text = " You Win";
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(4);
             }
             else
             {
