@@ -90,6 +90,7 @@
     <Compile Include="Assets\RainMaker\Prefab\RainScript.cs" />
     <Compile Include="Assets\RainMaker\Prefab\RainScript2D.cs" />
     <Compile Include="Assets\Scripts\alligator_move.cs" />
+    <Compile Include="Assets\Scripts\alligatorGameOver.cs" />
     <Compile Include="Assets\Scripts\AttachOnContact.cs" />
     <Compile Include="Assets\Scripts\BoundaryController.cs" />
     <Compile Include="Assets\Scripts\CrateController.cs" />
