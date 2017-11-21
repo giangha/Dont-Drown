@@ -95,7 +95,7 @@ public class GameController : MonoBehaviour
     public void Alligator_Damage()
     {
              
-        boat_health = boat_health - 50;
+        boat_health = boat_health - 1;
         if(boat_health<=0)
         {
             SceneManager.LoadScene(3);

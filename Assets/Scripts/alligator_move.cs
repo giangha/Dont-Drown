@@ -16,6 +16,7 @@ public class alligator_move : MonoBehaviour
     public float TimeInNet;
     private Rigidbody2D rb2d;
     private float pushforce = 250f;
+    public bool bite = false;
    
 
     void Start()
@@ -37,7 +38,8 @@ public class alligator_move : MonoBehaviour
         amin.SetBool("angry", angry);
         amin.SetBool("sleep", sleep);
         amin.SetBool("caught", caught);
-         target = GameObject.FindWithTag("Boat").transform;
+        amin.SetBool("bite", bite);
+        target = GameObject.FindWithTag("Boat").transform;
 
          float step = speed * Time.deltaTime;
          Vector3 offset = new Vector3(0, 0f, 0);
@@ -50,15 +52,20 @@ public class alligator_move : MonoBehaviour
 
          float difference_between_locations = old_x_location - new_x_location;
          if (difference_between_locations < 0) difference_between_locations = difference_between_locations * -1;
-         if (difference_between_locations < 2.7 && !caught)
-         {
+        if (difference_between_locations < 2.7 && !caught)
+        {
+            bite = true;
             //  Invoke("Alligator_Attack", 0);
+
             gameController.Alligator_Damage();
-           
-            aligator.gameObject.SetActive(false);
-            Invoke("Reappear", 15);
+
+            //aligator.gameObject.SetActive(false);
+            //Invoke("Reappear", 15);
 
         }
+        else
+            bite = false;
+        
 
 
     }
@@ -72,7 +79,7 @@ public class alligator_move : MonoBehaviour
            // aligator.gameObject.SetActive(false);
             other.gameObject.SetActive(false);
             caught = true;
-            speed = .1f;
+            speed = 0;
             Invoke("unCaught", 10);
           //  Invoke("Reappear", 15);
         }
@@ -121,9 +128,7 @@ public class alligator_move : MonoBehaviour
     void Alligator_Attack()
     {
         CancelInvoke();
-        amin.SetBool("angry", angry);
-        amin.SetBool("sleep", sleep);
-        amin.SetBool("caught", caught);
+      
         target = GameObject.FindWithTag("Boat").transform;
 
         float step = speed * Time.deltaTime;
