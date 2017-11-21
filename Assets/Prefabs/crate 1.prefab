@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 50830297538176748}
   - component: {fileID: 61999982044406688}
   - component: {fileID: 114522794951870512}
-  - component: {fileID: 111322668787051792}
+  - component: {fileID: 95574847619566620}
   m_Layer: 0
   m_Name: crate 1
   m_TagString: Crate
@@ -89,20 +89,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.8955709, y: 1.905858}
   m_EdgeRadius: 0
---- !u!111 &111322668787051792
-Animation:
+--- !u!95 &95574847619566620
+Animator:
+  serializedVersion: 3
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1933910837391278}
   m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 22103a6efd8541748b4338985bf796ba, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fe5d8c3a5d139ab429059b998c3520be, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114522794951870512
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -119,6 +122,8 @@ MonoBehaviour:
   scoreValue: 10
   windZone: {fileID: 0}
   isWindZone: 0
+  hitWater: 0
+  crate: {fileID: 1933910837391278}
 --- !u!212 &212387655961825130
 SpriteRenderer:
   m_ObjectHideFlags: 1

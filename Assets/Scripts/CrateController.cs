@@ -11,11 +11,16 @@ public class CrateController : MonoBehaviour
     private GameController gameController;
     public GameObject windZone;
     public bool isWindZone = false;
+    private Animator amin;
+    public bool hitWater = false;
+    public GameObject crate;
+
 
 
 
     void Start()
     {
+        amin = gameObject.GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
 
         // Make GameController and CrateConller wort together
@@ -28,12 +33,21 @@ public class CrateController : MonoBehaviour
         {
             Debug.Log("Cannot find 'GameController' script");
         }
+       
     }
 
-    // Nothing here yet
+  
+   
+
+    // crate hit water
     void Update()
     {
+        amin.SetBool("hitWater", hitWater);
 
+        if (crate.transform.position.y < -5.4)
+        {
+            hitWater = true;
+        }
     }
 
 }
