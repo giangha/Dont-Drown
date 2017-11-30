@@ -144,6 +144,21 @@ public class player_control_test : MonoBehaviour {
 		}
 
 		// Buying net
+		if (transform.position.x < -5.5 && Input.GetKey(KeyCode.V) && gameController.score >= 40) {
+			if (Time.time > buyTime) {
+				buyTime = Time.time + buyRate;
+				syringeTotal += 1;
+				gameController.syringes = syringeTotal;
+				gameController.syringesUpdate ();
+
+				gameController.score -= 40;
+				gameController.scoreUpdate ();
+				return;
+			}
+           
+        }
+
+		// Buying Syringes
 		if (transform.position.x < -5.5 && Input.GetKey(KeyCode.B) && gameController.score >= 20) {
 			if (Time.time > buyTime) {
 				buyTime = Time.time + buyRate;
@@ -155,8 +170,9 @@ public class player_control_test : MonoBehaviour {
 				gameController.scoreUpdate ();
 				return;
 			}
-           
-        }
+
+		}
+
         if (throws)
         {
             throws = false;

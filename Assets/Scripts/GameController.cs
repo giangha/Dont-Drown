@@ -34,6 +34,9 @@ public class GameController : MonoBehaviour
     public GUIText netText;
     public int nets;
 
+	public GUIText syringeText;
+	public int syringes;
+
     // Hint
     public GUIText hintText;
     int current_level;
@@ -131,6 +134,12 @@ public class GameController : MonoBehaviour
         netText.text = "Nets:" + nets;
         
     }
+
+	public void syringesUpdate()
+	{
+		syringeText.text = "Nets:" + nets;
+
+	}
 
     void Update()
     {
