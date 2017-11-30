@@ -61,6 +61,8 @@ public class GameController : MonoBehaviour
         playerHealthSlider.maxValue = boat_health;
         playerHealthSlider.value = boat_health;
         current_level = 2;
+        syringes = 10;
+        syringesUpdate();
 
 
     }
@@ -149,7 +151,7 @@ public class GameController : MonoBehaviour
 
 	public void syringesUpdate()
 	{
-		syringeText.text = "Nets:" + nets;
+		syringeText.text = "Syringe:" + syringes;
 
 	}
 

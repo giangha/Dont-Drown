@@ -136,8 +136,8 @@ public class player_control_test : MonoBehaviour {
 				//net_drop = true;
 				syringeTotal-- ;
 
-				//gameController.nets = netTotal;
-				//gameController.netUpdate ();
+				gameController.syringes = syringeTotal;
+				gameController.syringesUpdate();
 				return;
 			}
 
