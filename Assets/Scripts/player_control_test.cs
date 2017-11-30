@@ -119,9 +119,9 @@ public class player_control_test : MonoBehaviour {
 				var Clone = Instantiate(syringe, netDropPoint.position, netDropPoint.rotation);
 				syringeRid = Clone.GetComponent<Rigidbody2D> ();
 				if (toTheRight == true) {
-					syringeRid.AddForce (transform.right * 150);
+					syringeRid.AddForce (transform.right * 700);
 				} else {
-					syringeRid.AddForce (transform.right * -150);
+					syringeRid.AddForce (transform.right * -700);
 				}
 				//syringeRid.AddForce (transform.up * 300);
 				//net_drop = true;
