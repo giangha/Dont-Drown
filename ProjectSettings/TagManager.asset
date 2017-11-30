@@ -13,6 +13,7 @@ TagManager:
   - Alligator
   - playerHealthSlider
   - water
+  - metalcrate
   layers:
   - Default
   - TransparentFX

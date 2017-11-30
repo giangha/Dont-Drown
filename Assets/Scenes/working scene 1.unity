@@ -4140,6 +4140,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   crate: {fileID: 1933910837391278, guid: ad4851421c6604b3b816c417ee7c8c05, type: 2}
+  metal_crate: {fileID: 1987721737493030, guid: 36eed33201d1d2841bcef767defefbe0,
+    type: 2}
   boat: {fileID: 233095334}
   droppingPoint: {fileID: 1685648600}
   netDropPoint: {fileID: 317618681}
