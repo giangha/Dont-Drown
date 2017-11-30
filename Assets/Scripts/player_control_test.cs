@@ -111,6 +111,8 @@ public class player_control_test : MonoBehaviour {
 				}
 				netRid.AddForce (transform.up * 300);
 				//net_drop = true;
+				AudioSource sound = GetComponent<AudioSource>();
+				sound.Play();
 				netTotal-- ;
 
 				gameController.nets = netTotal;
@@ -123,6 +125,7 @@ public class player_control_test : MonoBehaviour {
             throws = true;
 			if (Time.time > shootTime)
 			{
+
 				shootTime = Time.time + shootRate;
 				Rigidbody2D syringeRid;
 				var Clone = Instantiate(syringe, netDropPoint.position, netDropPoint.rotation);
@@ -132,12 +135,18 @@ public class player_control_test : MonoBehaviour {
 				} else {
 					syringeRid.AddForce (transform.right * -700);
 				}
+
+				AudioSource shoot = GetComponent<AudioSource>();
+				shoot.Play();
+
+
+		
 				//syringeRid.AddForce (transform.up * 300);
 				//net_drop = true;
 				syringeTotal-- ;
 
-				gameController.syringes = syringeTotal;
-				gameController.syringesUpdate();
+				//gameController.nets = netTotal;
+				//gameController.netUpdate ();
 				return;
 			}
 
