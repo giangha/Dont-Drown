@@ -3717,7 +3717,7 @@ MonoBehaviour:
   speed: 3
   scare: 0
   syringeTotal: 10
-  syringe: {fileID: 1691260397032512, guid: 81b849768d20e4086a1651995e1cbaec, type: 2}
+  syringe: {fileID: 1989841118533122, guid: 67cedd123bad5c54ca90757524bc6f97, type: 2}
   netTotal: 5
   net: {fileID: 1274894287080280, guid: 9437490f36f0fd4469647ca35ac92cfc, type: 2}
   netDropPoint: {fileID: 317618681}
@@ -3746,7 +3746,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 238180864}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.5293884, y: 1.6792145, z: 0}
+  m_LocalPosition: {x: 4.8934937, y: -1.1763763, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 2052362427}
@@ -10151,7 +10151,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2052362423}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 430.5, y: 226, z: 0}
+  m_LocalPosition: {x: 456, y: 190.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 238180865}

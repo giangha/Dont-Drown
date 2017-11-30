@@ -237,6 +237,7 @@
     <Compile Include="Assets\Scripts\CrateController.cs" />
     <Compile Include="Assets\Scripts\GameController.cs" />
     <Compile Include="Assets\Scripts\LoadSceneOnClick.cs" />
+    <Compile Include="Assets\Scripts\metalcratecontroller.cs" />
     <Compile Include="Assets\Scripts\moneyMove.cs" />
     <Compile Include="Assets\Scripts\net_controller.cs" />
     <Compile Include="Assets\Scripts\player_control_test.cs" />

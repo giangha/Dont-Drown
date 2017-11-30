@@ -41,7 +41,13 @@ public class player_control_test : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        amin.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+
+
+        if (transform.rotation.z > 27 || transform.rotation.z < -27)
+        {
+            SceneManager.LoadScene(3);
+        }
+            amin.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
         amin.SetBool("scare", scare);
         amin.SetBool("throw", throws);
         float moveHorizontal = Input.GetAxis("Horizontal");
@@ -86,10 +92,7 @@ public class player_control_test : MonoBehaviour {
 		if (Input.GetKey("up") && netTotal > 0)
 		{
             throws = true;
-            if (transform.rotation.z > 27 || transform.rotation.z < -27)
-            {
-                SceneManager.LoadScene(3);
-            }
+            
             if (Time.time > shootTime)
 			{
 				shootTime = Time.time + shootRate;
@@ -112,6 +115,7 @@ public class player_control_test : MonoBehaviour {
 		}
 
 		if (Input.GetKey ("down") && syringeTotal > 0) {
+            throws = true;
 			if (Time.time > shootTime)
 			{
 				shootTime = Time.time + shootRate;
@@ -153,6 +157,8 @@ public class player_control_test : MonoBehaviour {
             throws = false;
 
         }
+
+       
     }
     private void OnCollisionEnter(Collision collision)
     {

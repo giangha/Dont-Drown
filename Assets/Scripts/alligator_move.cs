@@ -30,7 +30,7 @@ public class alligator_move : MonoBehaviour
             gameController = gameControllerObject.GetComponent<GameController>();
         }
         amin = gameObject.GetComponent<Animator>();
-        Invoke("Reappear", 20);
+        Invoke("Reappear", 1);
     }
 
     // Update is called once per frame
@@ -84,24 +84,41 @@ public class alligator_move : MonoBehaviour
             Invoke("unCaught", 10);
           //  Invoke("Reappear", 15);
         }
-      //  if (other.gameObject.CompareTag("Boat")) {
-       //     angry = true; }
-       
-      //  if (other.gameObject.CompareTag("boat_area"))
-      //  {
-            
-           // other.gameObject.SetActive(false);
-       // }
-       
+        //  if (other.gameObject.CompareTag("Boat")) {
+        //     angry = true; }
+
+        //  if (other.gameObject.CompareTag("boat_area"))
+        //  {
+
+        // other.gameObject.SetActive(false);
+        // }
+
+        if (other.gameObject.CompareTag("syringe"))
+        {
+            //Invoke("Reappear", 15);
+            // aligator.gameObject.SetActive(false);
+            other.gameObject.SetActive(false);
+            sleep = true;
+            speed = 0;
+            Invoke("wakeup", 15);
+            //  Invoke("Reappear", 15);
+        }
+
     }
 
 
     void unCaught()
-    {
+    {   
         CancelInvoke();
         caught = false;
         speed = 1f;
        // target.position = new Vector3(12, -4.8f, 0);
+    }
+    void wakeup()
+    {
+        CancelInvoke();
+        sleep = false;
+        speed = 1f;
     }
 
    /* void pushBack()

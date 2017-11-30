@@ -36,6 +36,14 @@ public class metalcratecontroller : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if(transform.position.y<-4.5)
+        {
+            crate.SetActive(false);
+        }
+    }
+
 
 
 
@@ -51,7 +59,7 @@ public class metalcratecontroller : MonoBehaviour
         if (other.gameObject.CompareTag("dmg2boat"))
         {
             gameController.Metalcrate_Damage();
-            Invoke("set_false", .3f);
+            crate.SetActive(false);
         }
     }
     void set_false()
