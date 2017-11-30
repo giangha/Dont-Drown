@@ -57,7 +57,7 @@ public class GameController : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         nets = 5;
         netUpdate();
-        boat_health = 100;
+        boat_health = 1000;
         playerHealthSlider.maxValue = boat_health;
         playerHealthSlider.value = boat_health;
         current_level = 2;
@@ -102,7 +102,7 @@ public class GameController : MonoBehaviour
     public void Alligator_Damage()
     {
              
-        boat_health = boat_health - 1;
+        boat_health = boat_health - 10;
         if(boat_health<=0)
         {
             SceneManager.LoadScene(3);
@@ -111,6 +111,18 @@ public class GameController : MonoBehaviour
         playerHealthSlider.value=boat_health;
        // playerHealthSlider.
     }
+
+    public void alligator_deal_little_dmg()
+    {
+        boat_health = boat_health - 1;
+        if (boat_health <= 0)
+        {
+            SceneManager.LoadScene(3);
+            //end game
+        }
+        playerHealthSlider.value = boat_health;
+    }
+
     public void Metalcrate_Damage()
     {
              

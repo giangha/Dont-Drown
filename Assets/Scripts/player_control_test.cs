@@ -72,16 +72,16 @@ public class player_control_test : MonoBehaviour {
             SceneManager.LoadScene(3);
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Alligator"))
+        if (collision.gameObject.CompareTag("scare"))
         {
             scare = true;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Alligator"))
+        if (collision.gameObject.CompareTag("scare"))
         {
             scare = true;
         }
@@ -181,9 +181,9 @@ public class player_control_test : MonoBehaviour {
 
        
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Alligator"))
+        if (collision.gameObject.CompareTag("scare"))
         {
             scare = true;
         }

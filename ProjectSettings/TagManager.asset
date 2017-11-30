@@ -17,6 +17,7 @@ TagManager:
   - water4crate
   - dmg2boat
   - syringe
+  - scare
   layers:
   - Default
   - TransparentFX

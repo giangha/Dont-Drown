@@ -30,7 +30,7 @@ public class alligator_move : MonoBehaviour
             gameController = gameControllerObject.GetComponent<GameController>();
         }
         amin = gameObject.GetComponent<Animator>();
-        //Invoke("Reappear", 20);
+        Invoke("Reappear", 1);
     }
 
     // Update is called once per frame
@@ -53,7 +53,7 @@ public class alligator_move : MonoBehaviour
 
          float difference_between_locations = old_x_location - new_x_location;
          if (difference_between_locations < 0) difference_between_locations = difference_between_locations * -1;
-        if (difference_between_locations < 2.7 && !caught)
+        if (difference_between_locations < 2.7 && !caught&& !sleep)
         {
             bite = true;
             //  Invoke("Alligator_Attack", 0);
@@ -64,6 +64,10 @@ public class alligator_move : MonoBehaviour
             //Invoke("Reappear", 15);
 
         }
+        else if (difference_between_locations < 2.7 && caught)
+            gameController.alligator_deal_little_dmg();
+        else if(sleep)
+        { speed = 0; }
         else
             bite = false;
         
