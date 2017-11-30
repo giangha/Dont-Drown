@@ -16,6 +16,7 @@ TagManager:
   - metalcrate
   - water4crate
   - dmg2boat
+  - syringe
   layers:
   - Default
   - TransparentFX

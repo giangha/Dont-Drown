@@ -9,7 +9,11 @@ public class player_control_test : MonoBehaviour {
     public float speed;
     public bool scare;
     private Animator amin;
-    private float throwcd = 3f;
+    //private float throwcd = 3f;
+
+	public int syringeTotal;
+	public GameObject syringe;
+
 	public int netTotal;
 	public GameObject net;
 	public Transform netDropPoint;
@@ -105,6 +109,29 @@ public class player_control_test : MonoBehaviour {
 				gameController.netUpdate ();
 				return;
 			}
+		}
+
+		if (Input.GetKey ("down") && syringeTotal > 0) {
+			if (Time.time > shootTime)
+			{
+				shootTime = Time.time + shootRate;
+				Rigidbody2D syringeRid;
+				var Clone = Instantiate(syringe, netDropPoint.position, netDropPoint.rotation);
+				syringeRid = Clone.GetComponent<Rigidbody2D> ();
+				if (toTheRight == true) {
+					syringeRid.AddForce (transform.right * 150);
+				} else {
+					syringeRid.AddForce (transform.right * -150);
+				}
+				//syringeRid.AddForce (transform.up * 300);
+				//net_drop = true;
+				syringeTotal-- ;
+
+				//gameController.nets = netTotal;
+				//gameController.netUpdate ();
+				return;
+			}
+
 		}
 
 		// Buying net
