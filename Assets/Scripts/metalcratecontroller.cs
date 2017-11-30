@@ -40,22 +40,29 @@ public class metalcratecontroller : MonoBehaviour
 
 
     // crate hit water
-    void Update()
-    {
-
-
-        if (crate.transform.position.y < -5.4)
-        {
-            crate.SetActive(false);
-        }
-    }
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.CompareTag("Boat"))
+        if (other.gameObject.CompareTag("water4crate"))
         {
-            gameController.Metalcrate_Damage();
-            crate.SetActive(false);
+             //crate.SetActive(false);
+            Invoke("set_false", .5f);
         }
        
+        if (other.gameObject.CompareTag("dmg2boat"))
+        {
+            gameController.Metalcrate_Damage();
+            Invoke("set_false", .3f);
+        }
     }
+    void set_false()
+    {
+        CancelInvoke();
+        crate.SetActive(false);
+    }
+
+   // void OnTriggerEnter2D(Collider2D other)
+  //  {
+       
+       
+   // }
 }

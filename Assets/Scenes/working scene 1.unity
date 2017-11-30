@@ -4185,7 +4185,7 @@ GameObject:
   - component: {fileID: 464285450}
   m_Layer: 4
   m_Name: ocean4crate
-  m_TagString: water
+  m_TagString: water4crate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4212,7 +4212,7 @@ BuoyancyEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 1024
-  m_SurfaceLevel: -6.18
+  m_SurfaceLevel: -6.42
   m_Density: 500
   m_LinearDrag: 5
   m_AngularDrag: 5
@@ -4231,7 +4231,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -7.58}
+  m_Offset: {x: 0, y: -8.535364}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -4242,7 +4242,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 33.52, y: 4.77}
+  m_Size: {x: 33.52, y: 2.8592715}
   m_EdgeRadius: 0
 --- !u!212 &464285453
 SpriteRenderer:
@@ -4711,7 +4711,7 @@ BuoyancyEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294966015
-  m_SurfaceLevel: -5.98
+  m_SurfaceLevel: -5.41
   m_Density: 100
   m_LinearDrag: 5
   m_AngularDrag: 5
@@ -4881,6 +4881,78 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.4, y: 0.57}
   m_EdgeRadius: 0
+--- !u!1 &993964949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 993964950}
+  - component: {fileID: 993964951}
+  - component: {fileID: 993964952}
+  m_Layer: 11
+  m_Name: dmg2boat
+  m_TagString: dmg2boat
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &993964950
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993964949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 233095337}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &993964951
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993964949}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 1
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: -1.7413349, y: 0.5606029}
+  - {x: 0.73962593, y: 0.37353396}
+  - {x: 1.1587019, y: 1.5425174}
+  - {x: 2.040125, y: 1.5741112}
+  - {x: 2.1976414, y: -0.30376768}
+  - {x: -0.139637, y: -0.38917494}
+  - {x: -1.0783167, y: -0.2876072}
+  - {x: -1.6826038, y: 0.20717764}
+  - {x: -1.7396469, y: 0.5205369}
+--- !u!253 &993964952
+BuoyancyEffector2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 993964949}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  m_SurfaceLevel: 0.38
+  m_Density: 200
+  m_LinearDrag: 5
+  m_AngularDrag: 5
+  m_FlowAngle: 0
+  m_FlowMagnitude: 0
+  m_FlowVariation: 0
 --- !u!1 &1105656209
 GameObject:
   m_ObjectHideFlags: 0
@@ -4980,7 +5052,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4975668419188696, guid: e15104e75b5fd3449a2a2425c93fa26e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -4.38
+      value: -3.85
       objectReference: {fileID: 0}
     - target: {fileID: 4975668419188696, guid: e15104e75b5fd3449a2a2425c93fa26e, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5013,6 +5085,10 @@ Prefab:
     - target: {fileID: 1549081534109426, guid: e15104e75b5fd3449a2a2425c93fa26e, type: 2}
       propertyPath: m_Name
       value: boat
+      objectReference: {fileID: 0}
+    - target: {fileID: 4975668419188696, guid: e15104e75b5fd3449a2a2425c93fa26e, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e15104e75b5fd3449a2a2425c93fa26e, type: 2}

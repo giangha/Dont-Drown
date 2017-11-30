@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour
 
     // Hint
     public GUIText hintText;
-
+    int current_level;
     // Total crates on boat
     GameObject[] totalCrates;
 
@@ -57,7 +57,9 @@ public class GameController : MonoBehaviour
         boat_health = 100;
         playerHealthSlider.maxValue = boat_health;
         playerHealthSlider.value = boat_health;
-        
+        current_level = 2;
+
+
     }
 
     // Create crates from above
@@ -76,7 +78,7 @@ public class GameController : MonoBehaviour
             float z = 0;
             Vector3 pos = new Vector3(x, y, z);
             droppingPoint.position = pos;
-            if (Random.Range(0, 10) < 3) Instantiate(metal_crate, droppingPoint.position, droppingPoint.rotation);
+            if (Random.Range(0, 10) < current_level) Instantiate(metal_crate, droppingPoint.position, droppingPoint.rotation);
             else Instantiate(crate, droppingPoint.position, droppingPoint.rotation);
             yield return new WaitForSeconds(dropRate);
         }
@@ -135,8 +137,11 @@ public class GameController : MonoBehaviour
         // Time counting
         startingTime -= Time.deltaTime;
         theText.text = Mathf.Round(startingTime).ToString();
-
-
+        if (boat.transform.rotation.z > 27)
+        {
+            SceneManager.LoadScene(3);
+        }
+        
         // Unload crates
         if (Input.GetKey(KeyCode.Z))
         {

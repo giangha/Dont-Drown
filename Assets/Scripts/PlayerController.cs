@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 [System.Serializable]
@@ -37,6 +38,13 @@ public class PlayerController : MonoBehaviour {
 			-3f
 		);
 	}
-   
+    void Update()
+    {
+       if(transform.position.z>25 || transform.position.z<-25)
+        {
+            SceneManager.LoadScene(3);
+        }
+    }
+
 
 }

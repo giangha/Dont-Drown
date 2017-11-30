@@ -21,15 +21,16 @@ public class alligator_move : MonoBehaviour
 
     void Start()
     {
+        gameObject.SetActive(false);
         rb2d = gameObject.GetComponent<Rigidbody2D>();
-
+       
         GameObject gameControllerObject = GameObject.FindGameObjectWithTag("GameController");
         if (gameControllerObject != null)
         {
             gameController = gameControllerObject.GetComponent<GameController>();
         }
         amin = gameObject.GetComponent<Animator>();
-        
+        Invoke("Reappear", 20);
     }
 
     // Update is called once per frame

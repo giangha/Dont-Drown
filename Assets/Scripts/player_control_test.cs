@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class player_control_test : MonoBehaviour {
     public Rigidbody2D rb;
@@ -51,6 +52,10 @@ public class player_control_test : MonoBehaviour {
 
         Vector2 move = new Vector2(moveHorizontal, 0.0f);
         rb.velocity = move * speed;
+        if (transform.rotation.z > 27 || transform.rotation.z < -27)
+        {
+            SceneManager.LoadScene(3);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -77,7 +82,10 @@ public class player_control_test : MonoBehaviour {
 		if (Input.GetKey("up") && netTotal > 0)
 		{
             throws = true;
-            
+            if (transform.rotation.z > 27 || transform.rotation.z < -27)
+            {
+                SceneManager.LoadScene(3);
+            }
             if (Time.time > shootTime)
 			{
 				shootTime = Time.time + shootRate;

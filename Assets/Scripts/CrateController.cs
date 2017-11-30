@@ -33,7 +33,8 @@ public class CrateController : MonoBehaviour
         {
             Debug.Log("Cannot find 'GameController' script");
         }
-       
+        
+
     }
 
   
@@ -43,12 +44,16 @@ public class CrateController : MonoBehaviour
     void Update()
     {
         amin.SetBool("hitWater", hitWater);
+    }
 
-        if (crate.transform.position.y < -5.4)
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("water4crate"))
         {
+ 
             hitWater = true;
             //crate.SetActive(false);
-           Invoke("set_false", .5f);
+            Invoke("set_false", .5f);
         }
     }
 
