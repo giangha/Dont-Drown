@@ -182,15 +182,9 @@ public class GameController : MonoBehaviour
 		
         if (startingTime <= 0)
         {
-            if (score >= 100)
-            {
-                hintText.text = " You Win";
+            
                 SceneManager.LoadScene(4);
-            }
-            else
-            {
-                SceneManager.LoadScene(3);
-            }
+           
             // Detroy crate when go out boundary
         }
     }

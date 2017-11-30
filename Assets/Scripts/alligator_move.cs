@@ -30,7 +30,7 @@ public class alligator_move : MonoBehaviour
             gameController = gameControllerObject.GetComponent<GameController>();
         }
         amin = gameObject.GetComponent<Animator>();
-        Invoke("Reappear", 1);
+        //Invoke("Reappear", 20);
     }
 
     // Update is called once per frame
@@ -100,7 +100,7 @@ public class alligator_move : MonoBehaviour
             other.gameObject.SetActive(false);
             sleep = true;
             speed = 0;
-            Invoke("wakeup", 15);
+            Invoke("unCaught", 10);
             //  Invoke("Reappear", 15);
         }
 
@@ -111,16 +111,11 @@ public class alligator_move : MonoBehaviour
     {   
         CancelInvoke();
         caught = false;
+        sleep = false;
         speed = 1f;
        // target.position = new Vector3(12, -4.8f, 0);
     }
-    void wakeup()
-    {
-        CancelInvoke();
-        sleep = false;
-        speed = 1f;
-    }
-
+   
    /* void pushBack()
     {
         

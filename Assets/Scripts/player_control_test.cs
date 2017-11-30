@@ -13,7 +13,6 @@ public class player_control_test : MonoBehaviour {
 
 	public int syringeTotal;
 	public GameObject syringe;
-
 	public int netTotal;
 	public GameObject net;
 	public Transform netDropPoint;
@@ -43,11 +42,17 @@ public class player_control_test : MonoBehaviour {
 	void Update () {
 
 
-        if (transform.rotation.z > 27 || transform.rotation.z < -27)
+        if (transform.rotation.z > 5 || transform.rotation.z < -27)
         {
             SceneManager.LoadScene(3);
         }
-            amin.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
+
+
+        if (transform.position.y < -5.5 || transform.position.y > -3)
+        {
+            SceneManager.LoadScene(3);
+        }
+        amin.SetFloat("speed", Mathf.Abs(Input.GetAxis("Horizontal")));
         amin.SetBool("scare", scare);
         amin.SetBool("throw", throws);
         float moveHorizontal = Input.GetAxis("Horizontal");
