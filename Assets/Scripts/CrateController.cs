@@ -47,7 +47,15 @@ public class CrateController : MonoBehaviour
         if (crate.transform.position.y < -5.4)
         {
             hitWater = true;
+            //crate.SetActive(false);
+           Invoke("set_false", .5f);
         }
+    }
+
+    void set_false()
+    {
+        CancelInvoke();
+        crate.SetActive(false);
     }
 
 }

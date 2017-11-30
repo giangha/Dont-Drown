@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dont-Drown", "Dont-Drown.csproj", "{CA8E016B-A616-666E-FE22-2DE8B1366A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dont-Drown.Editor", "Dont-Drown.Editor.csproj", "{F565BDD3-B04B-A22E-1758-117DD7613065}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA8E016B-A616-666E-FE22-2DE8B1366A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8E016B-A616-666E-FE22-2DE8B1366A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8E016B-A616-666E-FE22-2DE8B1366A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8E016B-A616-666E-FE22-2DE8B1366A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F565BDD3-B04B-A22E-1758-117DD7613065}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F565BDD3-B04B-A22E-1758-117DD7613065}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F565BDD3-B04B-A22E-1758-117DD7613065}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F565BDD3-B04B-A22E-1758-117DD7613065}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

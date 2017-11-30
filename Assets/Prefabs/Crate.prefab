@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4306597508158136}
   - component: {fileID: 212205236660642950}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: crate
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   - component: {fileID: 54918434274958598}
   - component: {fileID: 114775800153815678}
   - component: {fileID: 111969434102767414}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Crate
   m_TagString: Crate
   m_Icon: {fileID: 0}
@@ -130,6 +130,8 @@ MonoBehaviour:
   scoreValue: 10
   windZone: {fileID: 0}
   isWindZone: 0
+  hitWater: 0
+  crate: {fileID: 0}
 --- !u!212 &212205236660642950
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -139,6 +141,7 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -154,6 +157,7 @@ SpriteRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
