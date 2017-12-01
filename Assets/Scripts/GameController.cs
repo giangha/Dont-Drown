@@ -61,7 +61,7 @@ public class GameController : MonoBehaviour
         playerHealthSlider.maxValue = boat_health;
         playerHealthSlider.value = boat_health;
         current_level = 2;
-        syringes = 10;
+        syringes = 5;
         syringesUpdate();
 
 
@@ -128,7 +128,7 @@ public class GameController : MonoBehaviour
     public void Metalcrate_Damage()
     {
              
-        boat_health = boat_health - 10;
+        boat_health = boat_health - 200;
         if(boat_health<=0)
         {
             SceneManager.LoadScene(3);

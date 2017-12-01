@@ -30,7 +30,7 @@ public class alligator_move : MonoBehaviour
             gameController = gameControllerObject.GetComponent<GameController>();
         }
         amin = gameObject.GetComponent<Animator>();
-        Invoke("Reappear", 1);
+        Invoke("Reappear", 10);
     }
 
     // Update is called once per frame

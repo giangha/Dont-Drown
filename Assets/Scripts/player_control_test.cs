@@ -111,8 +111,8 @@ public class player_control_test : MonoBehaviour {
 				}
 				netRid.AddForce (transform.up * 300);
 				//net_drop = true;
-				AudioSource sound = GetComponent<AudioSource>();
-				sound.Play();
+				//AudioSource sound = GetComponent<AudioSource>();
+				//sound.Play();
 				netTotal-- ;
 
 				gameController.nets = netTotal;
@@ -136,8 +136,8 @@ public class player_control_test : MonoBehaviour {
 					syringeRid.AddForce (transform.right * -700);
 				}
 
-				AudioSource shoot = GetComponent<AudioSource>();
-				shoot.Play();
+				//AudioSource shoot = GetComponent<AudioSource>();
+				//shoot.Play();
 
 
 		
@@ -145,8 +145,8 @@ public class player_control_test : MonoBehaviour {
 				//net_drop = true;
 				syringeTotal-- ;
 
-				//gameController.nets = netTotal;
-				//gameController.netUpdate ();
+				gameController.syringes = syringeTotal;
+				gameController.syringesUpdate ();
 				return;
 			}
 
